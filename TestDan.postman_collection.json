@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "a7c65872-264d-41f4-9ff6-bd6c40b79e55",
+		"name": "TestDan",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"system\",\r\n    \"pass\" :\"system\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/users/login"
+			},
+			"response": []
+		},
+		{
+			"name": "Job",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://dev3.dansmultipro.co.id/api/recruitment/positions.json"
+			},
+			"response": []
+		},
+		{
+			"name": "Job Detail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://dev3.dansmultipro.co.id/api/recruitment/positions/5"
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": {
+			"token": "eyJhbGciOiJSUzI1NiJ9.eyJpZCI6MSwiZXhwIjoxNjg5NDkyNTAwfQ.43FSp96Drq2n0sYZJDx7TiLCNowRslIJ-vN3loEUKA7fRkAJprcE0SlDwF0aOgxM9H6cBXIB_43DuKqu_ikAQWojx1ClSH9V2-VqvoBnVq7Xb9uWNiFyrnXYW3xsh5naQ-eaT4EzPzCr0cazsREzFQ4oo33c_e2i1yClTDgXRhBHH_uix-8H_BzhLLT17g_tXWDT25Q4aKsevJE_PxvLhYxfCe6_3-2g6M5QrXMwCH9mouoPx3jj_iLy8uA4OVO5iwxeZQiM3dwTcUFmh-JF7fvAYcs9b6U6QzewCX0DDo6QAQ7Qld3MF3ohxEl0T9783413CgpT9H4u4SMhakMakg"
+		}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
